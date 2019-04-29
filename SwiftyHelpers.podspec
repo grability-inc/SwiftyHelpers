@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftyHelpers"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.5"
   spec.summary      = "Focused on making simpler to developing in Swift."
   spec.swift_version = '4.2'
 
