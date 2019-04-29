@@ -82,7 +82,7 @@ public extension UICollectionView {
      - returns: Registered header reusable view
      */
     public func headerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
-        return self.supplementaryViewForClass(indexPath, kind: UICollectionElementKindSectionHeader)
+        return self.supplementaryViewForClass(indexPath, kind: UICollectionView.elementKindSectionHeader)
     }
 
     /**
@@ -93,7 +93,7 @@ public extension UICollectionView {
      - returns: Registered footer reusable view
      */
     public func footerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
-        return self.supplementaryViewForClass(indexPath, kind: UICollectionElementKindSectionFooter)
+        return self.supplementaryViewForClass(indexPath, kind: UICollectionView.UICollectionElementKindSectionFooter)
     }
 }
 
