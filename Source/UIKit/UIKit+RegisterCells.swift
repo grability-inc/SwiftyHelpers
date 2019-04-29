@@ -93,7 +93,7 @@ public extension UICollectionView {
      - returns: Registered footer reusable view
      */
     public func footerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
-        return self.supplementaryViewForClass(indexPath, kind: UICollectionView.UICollectionElementKindSectionFooter)
+        return self.supplementaryViewForClass(indexPath, kind: UICollectionView.elementKindSectionFooter)
     }
 }
 
