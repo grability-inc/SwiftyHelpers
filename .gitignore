@@ -1,0 +1,41 @@
+.DS_Store
+*/.DS_Store
+*.DS_Store
+*Breakpoints_v2.xcbkptlist
+*/Breakpoints_v2.xcbkptlist
+# User specific files
+*/UserInterfaceState.xcuserstate
+
+#Pods
+Pods/
+*/Pods/
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+## Aditional
+*/xcschememanagement.plist
+xcuserdata/
+*/node_modules/*
+node_modules
+
+build
+output_directory
+*/!*.xcworkspace/contents.xcworkspacedata
+
+## Swiftlint
+.swiftlint.yml
+
+# R swift library generated file
+*.generated.swift
+
+# Compilation times
+results.csv
+
