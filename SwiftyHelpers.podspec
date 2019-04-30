@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/grability-inc/SwiftyHelpers.git", :tag => "#{spec.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "SwiftyHelpers/**/*.{swift}"
+  spec.source_files  = "Source/**/*.{swift}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.resources = "SwiftyHelpers/**/*.{png,jpeg,jpg,storyboard,xib}"
