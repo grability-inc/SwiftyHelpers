@@ -25,7 +25,7 @@ public extension UITableView {
      
      - returns: Registered cell
      */
-    public func cellForClass<T: UITableViewCell>() -> T {
+    func cellForClass<T: UITableViewCell>() -> T {
         return self.dequeueReusableCell(withIdentifier: _id(T.self)) as! T
     }
 
@@ -34,7 +34,7 @@ public extension UITableView {
 
      - returns: Registered cell
      */
-    public func headerFooterForClass<T: UITableViewHeaderFooterView>() -> T {
+    func headerFooterForClass<T: UITableViewHeaderFooterView>() -> T {
         return self.dequeueReusableHeaderFooterView(withIdentifier: _id(T.self)) as! T
     }
     
@@ -58,7 +58,7 @@ public extension UICollectionView {
      
      - returns: Registered cell
      */
-    public func cellForClass<T: UICollectionViewCell>(_ indexPath: IndexPath) -> T {
+    func cellForClass<T: UICollectionViewCell>(_ indexPath: IndexPath) -> T {
         return self.dequeueReusableCell(withReuseIdentifier: _id(T.self), for: indexPath) as! T
     }
     
@@ -70,7 +70,7 @@ public extension UICollectionView {
      
      - returns: Registered reusable view
      */
-    public func supplementaryViewForClass<T: UICollectionReusableView>(_ indexPath: IndexPath, kind: String) -> T {
+    func supplementaryViewForClass<T: UICollectionReusableView>(_ indexPath: IndexPath, kind: String) -> T {
         return self.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: _id(T.self), for: indexPath) as! T
     }
 
@@ -81,7 +81,7 @@ public extension UICollectionView {
 
      - returns: Registered header reusable view
      */
-    public func headerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
+    func headerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
         return self.supplementaryViewForClass(indexPath, kind: UICollectionView.elementKindSectionHeader)
     }
 
@@ -92,7 +92,7 @@ public extension UICollectionView {
 
      - returns: Registered footer reusable view
      */
-    public func footerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
+    func footerForClass<T: UICollectionReusableView>(_ indexPath: IndexPath) -> T {
         return self.supplementaryViewForClass(indexPath, kind: UICollectionView.elementKindSectionFooter)
     }
 }
