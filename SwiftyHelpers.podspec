@@ -9,9 +9,9 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftyHelpers"
-  spec.version      = "1.0.10"
+  spec.version      = "1.0.20"
   spec.summary      = "Focused on making simpler to developing in Swift."
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 
   spec.description  = "SwiftHelpers is focused on making simpler the most tedious and repeating tasks when it comes to developing in Swift."
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.author             = { "lauramejiaarroyave" => "laura.grability@gmail.com" }
+  spec.author             = { s"lauramejiaarroyave" => "laura.grability@gmail.com" }
 
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
